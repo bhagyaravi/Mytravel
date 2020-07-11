@@ -28,6 +28,7 @@ public class FlightResource {
 	 
 	@POST
 	@Path("/add")
+	@Transactional
 	public Response addFlight(Flight flight) {
 		flight.persist();
 		Jsonb jsonb = JsonbBuilder.create();
