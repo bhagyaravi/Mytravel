@@ -9,6 +9,7 @@ import javax.ws.rs.POST;
 import javax.ws.rs.Path;
 import javax.ws.rs.QueryParam;
 import javax.ws.rs.core.Response;
+import javax.transaction.Transactional;
 
 import com.test.quarkus.model.Flight;
 
