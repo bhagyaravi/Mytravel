@@ -2,6 +2,9 @@ package com.test.quarkus.model;
 
 
 import java.util.Date;
+import javax.persistence.Entity;
+
+import io.quarkus.hibernate.orm.panache.PanacheEntity;
 
 @Entity
 public class Flight extends PanacheEntity {
