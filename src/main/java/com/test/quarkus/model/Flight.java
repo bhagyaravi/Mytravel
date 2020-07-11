@@ -3,7 +3,8 @@ package com.test.quarkus.model;
 
 import java.util.Date;
 
-public class Flight {
+@Entity
+public class Flight extends PanacheEntity {
 
 	long flightId;
 	String flightBrand;

@@ -23,13 +23,13 @@ public class FlightResource {
 		System.out.println("To City is :" + tocity);
 		System.out.println("Date is :" + date);
 		
-		return Response.ok().build();
+		return Response.ok(Flight.list("fromcity",fromcity)).build();
 	}
 	 
 	@POST
 	@Path("/add")
 	public Response addFlight(Flight flight) {
-		//flight.persist();
+		flight.persist();
 		Jsonb jsonb = JsonbBuilder.create();
 		System.out.println("Flight Details are :" + jsonb.toJson(flight));
 		return Response.ok(flight).status(201).build();
