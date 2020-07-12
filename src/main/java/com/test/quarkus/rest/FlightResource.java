@@ -23,8 +23,10 @@ public class FlightResource {
 		System.out.println("From City is :" + fromcity);
 		System.out.println("To City is :" + tocity);
 		System.out.println("Date is :" + date);
-		
-		return Response.ok(Flight.list("fromcity",fromcity)).build();
+		Map<String, Object> params = new HashMap<>(); 
+		 params.put("fromcity", fromcity); 
+		 params.put("tocity", tocity);
+		return Response.ok(Flight.list("fromcity = :fromcity and tocity = :tocity", params)).build();
 	}
 	 
 	@POST
