@@ -10,6 +10,8 @@ import javax.ws.rs.Path;
 import javax.ws.rs.QueryParam;
 import javax.ws.rs.core.Response;
 import javax.transaction.Transactional;
+import java.util.Map;
+import java.util.HashMap;
 
 import com.test.quarkus.model.Flight;
 
