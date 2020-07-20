@@ -18,6 +18,7 @@ public class FlightBooking extends PanacheEntityBase {
     UUID flightId;
     long flightAmount;
     String flightClass;
+    String flightBookingStatus;
 
     public UUID getFlightBookingId(){
         return this.id;
@@ -54,5 +55,11 @@ public class FlightBooking extends PanacheEntityBase {
     public void setFlightClass(String flightClass) {
         this.flightClass = flightClass;
     }
+   public String getFlightBookingStatus() {
+        return this.flightBookingStatus;
+    }
 
+    public void setFlightBookingStatus(String flightBookingStatus) {
+        this.flightBookingStatus = flightBookingStatus;
+    }
 }
