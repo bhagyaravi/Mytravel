@@ -18,6 +18,7 @@ create table FlightBooking
 	flightId uuid not null,
 	flightAmount numeric not null,
 	flightClass varchar(100) not null,
+	flightBookingStatus varchar(100) not null,
 	primary key (id),
 	foreign key (flightId) references Flight (id)
 );
