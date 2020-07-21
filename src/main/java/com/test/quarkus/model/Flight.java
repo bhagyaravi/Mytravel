@@ -22,7 +22,7 @@ public class Flight extends PanacheEntityBase {
 	int totalSeats;
 	int seatsFilled;
 
-	public UUID getFlightId() {
+	public UUID getId() {
 		return this.id;
 	}
 
