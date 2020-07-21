@@ -47,7 +47,7 @@ public class FlightResource {
 	}
 	
 	@Get
-	@Path("/sampleflight)
+	@Path("/sampleflight")
 	public Response sampleFlight(){
 		Flight flight = new Flight();
 		flight.setFlightBrand("Air India");
