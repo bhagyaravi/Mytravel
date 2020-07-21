@@ -7,7 +7,7 @@ import org.eclipse.microprofile.reactive.messaging.Incoming;
 import io.smallrye.reactive.messaging.annotations.Merge;
 import org.json.simple.JSONObject; 
 import org.json.simple.parser.*; 
-import com.test.quarkus.model.Trip;
+import com.test.quarkus.model.FlightBooking;
 import java.util.UUID;
 import io.smallrye.reactive.messaging.annotations.Blocking;
 import javax.json.bind.Jsonb;
