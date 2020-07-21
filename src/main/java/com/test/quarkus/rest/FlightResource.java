@@ -45,5 +45,18 @@ public class FlightResource {
 		flightBooking.persist();
 		return Response.ok(flightBooking).status(201).build();
 	}
+	
+	@Get
+	@Path("/sampleflight)
+	public Response sampleFlight(){
+		Flight flight = new Flight();
+		flight.setFlightBrand("Air India");
+		flight.setFlightTime("2020-07-18 15:30:00");
+		flight.setFromCity("Banaglore");
+		flight.setToCity("Mumbai");
+		flight.totalSeats(40);
+		flight.setSeatsFilled(0);
+		return Response.ok(flight).status(200).build();
+	}
 
 }
